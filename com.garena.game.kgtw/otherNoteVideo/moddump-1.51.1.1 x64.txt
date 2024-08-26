@@ -1,0 +1,74 @@
+return 1;
+public class GameSettings
+    public static Boolean get_Supported60FPSMode() { }
+
+
+return 1;
+public class HeroInfoPanel : HeroInfoPanelInterface
+    private Void ShowHeroInfo(PoolObjHandle`1 actor, Boolean bShow) { }
+
+return 0;
+public class LFrameSyncBattleLogic : LBattleLogic
+    public UInt64 SampleAndSendFrameSyncData(Boolean isFightOver) { }
+
+
+return 0;
+public class LFrameSyncBattleLogic : LBattleLogic
+    public Void SendSyncData(Boolean isFightOver, UInt64 hashCode) { }
+
+
+return 1;
+public class ObjLinkerWrapper : VActorComponent
+    public Boolean IsDistanceLowerEqualAsAttacker(ActorLinker targetActor, Int32 radius) { }
+
+return 1;
+public class MiniMapHeroInfo : MonoBehaviour
+    public Void ShowHeroHpInfo(Boolean bShow) { }
+    public Void ShowSkillStateInfo(Boolean bShow) { }
+
+public class MiniMapHeroInfo_LS : MonoBehaviour
+    public Void ShowSkillStateInfo(Boolean bShow) { }
+
+bVisible = 1;
+public class LVActorLinker : LActorComponent
+    public Boolean SetVisible(COM_PLAYERCAMP camp, Boolean bVisible, Boolean forceSync) { }
+
+return;
+public sealed class MtaService : MonoBehaviour
+    public static Void ReportAppMonitorStat(MtaAppMonitor monitor) { }
+    public static Void ReportGameUser(MtaGameUser gameUser) { }
+    public static Void ReportError(String error_msg) { }
+
+public class LObjWrapper : LActorComponent
+    public Void SetRouteNearestWaypointAsCurWaypoint() { }
+
+public static class AnoSDK
+    private static extern IntPtr AnoSDKGetReportData() { }
+    public static Byte[] GetReportData2() { }
+    private static extern IntPtr AnoSDKGetReportData2() { }
+    public static Byte[] GetReportData3() { }
+    private static extern IntPtr AnoSDKGetReportData3() { }
+    private static extern Void AnoSDKDelReportData3(IntPtr info) { }
+
+private class AntiDataInfo
+    public Void .ctor() { }
+
+public class TGPAServiceAndroid : ITGPAService
+    public Void EnableLog(Boolean enable) { }
+    public String CheckDeviceIsReal() { }
+    public Void ReportUserInfo(Dictionary`2 dict) { }
+
+public class MSDKCrash
+    private static extern Void closeCrashReportAdapter() { }
+    public static Void LogInfo(MSDKCrashLevel level, String tag, String log) { }
+    public static Void SetUserValue(String k, String v) { }
+    public static Void SetUserId(String userId) { }
+    public static Void CloseCrashReport() { }
+    
+public class MSDKLBS
+    public static Void GetIPInfo() { }
+
+public class GCloudVoiceEngine : IGCloudVoice
+    private static extern Int32 GCloudVoice_ReportPlayer(String[] cszOpenID, Int32 nCount, String strInfo) { }
+    public override Int32 SetReportedPlayerInfo(String[] cszOpenID, Int32[] nMemberID, Int32 nCount) { }
+    public override Int32 ReportPlayer(String[] cszOpenID, Int32 nCount, String strInfo) { }

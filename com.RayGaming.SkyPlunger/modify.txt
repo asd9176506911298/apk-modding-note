@@ -1,0 +1,11 @@
+ADS::ctor
+0x3E91FC
+
+Rewarded::ShowRewaredAdd
+0x4068A8
+
+MaxSdkAndroid::ShowRewardedAd
+0xA55970
+
+MaxSdkAndroid::IsRewardedAdReady
+0xA55808

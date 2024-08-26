@@ -1,0 +1,7 @@
+CJNBattleLoop
+CJNBattleMgr
+CreatRoleData
+http://cwres.ting-zhou.com/tw_20230526/android/Packages/lua.pkg
+http://cwres.ting-zhou.com/tw_20230526/android/Packages/Packages
+http://cwres.ting-zhou.com/tw_20230526/android/Packages/manifest.mana
+http://cwres.ting-zhou.com/tw_20230526/android/Packages/shared.pkg

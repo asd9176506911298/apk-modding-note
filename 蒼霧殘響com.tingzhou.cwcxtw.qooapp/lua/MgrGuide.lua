@@ -1,0 +1,199 @@
+--require 'BT/b3'
+--local cjson = require "cjson"
+---- 资源管理器
+--MgrGuide = {}
+--local this = MgrGuide
+--this.FinishList = {}
+--this.FinishCount = 13
+--this.ForceUnLock = false -- 强制弱引导
+--this.ForceSkip = false -- 跳过引导
+--this.IsRunning = false
+--this.HaveClickChangePosition = false -- 交换位置
+--this.HaveChangePosition = false --交换位置完成
+--this.HaveClickTrueChangePosition = false --结束变更
+--this.ThirdOver = false -- 第三关结束
+--this.ShowRestraint = false --两探员克制
+--this.ShowJob = false
+--this.DrawRobot = false --抽探员
+--this.ClickBtnUpgrade = false --点击辅助机升级按钮
+--this.TheOfEndPilotsUpgrade = false --辅助机升级结束
+--
+--this.CloseRestraintDiagram = false --
+--
+--this.TheChangePositionTime = 0 --交换位置次数
+--
+--
+--this.GuideLayer = {
+--    Target  = 4020,
+--    Click   = 4010,
+--    NPC     = 4030,
+--    MsgBox  = 4040,
+--}
+--this.DemonstrationBombType = nil --演示弹框的类型
+--this.HaveShow = {}
+--this.HaveShowClose = {}
+--function this.SetFinishList(pList)
+--    if pList == nil or type(pList) == "userdata" then pList = {} end
+--    -- for i,v in ipairs(pList) do
+--    --     if v == 1008 then
+--    --         table.remove(pList, i)
+--    --         break
+--    --     end
+--    -- end
+--    this.FinishList = pList
+--end
+--
+--function this.Finish(StepId)
+--    local data = {
+--        ngid = StepId,
+--    }
+--    --MgrNet.SendReq(MgrNet.Put, MgrNet.Key, "character/".. PlayerControl.uid.."/noviceguidance", data, function(msg)
+--    --    this.CurTreeId = nil
+--    --    table.insert(this.FinishList, StepId)
+--    --    this.OnClickBack()
+--    --    Event.Go(EID.Guide_Finish)
+--    --end)
+--end
+--
+--function this.Start()
+--    if this.GuideFinish() then
+--        print("新手引导已经完成")
+--        return
+--    end
+--    if this.ForceSkip then return end
+--    this.CreateMainTree()
+--    this.OpenTick()
+--    this.IsRunning = true
+--end
+--
+--function this.Stop()
+--    this.OnClickBack()
+--    this.CloseTick()
+--    this.Tree = nil
+--    this.Tick = nil
+--    this.Trace = nil
+--    this.TargetCell = nil
+--    this.IsRunning = false
+--end
+--
+--function this.ReStart()
+--    this.ForceSkip = false
+--    this.IsRunning = true
+--    this.Start()
+--    this.OnTick()
+--end
+--
+--function this.SetForceUnLock(pUnlock)
+--    this.ForceUnLock = pUnlock
+--    Event.Go(EID.Guide_Force_Unlock)
+--end
+--
+--function this.CreateMainTree()
+--    this.Tree = b3.BehaviorTree.New()
+--    local jsonStr = MgrRes.GetText("Lua/Conf/Guide/main.lua")
+--    if jsonStr == nil then return end
+--    local data = cjson.decode(jsonStr)
+--    this.Tree:load(data, {})
+--    this.Trace = b3.Blackborad.New()
+--    this.Tick = b3.Tick.New()
+--    this.Tick.agent = b3.Blackborad.New()
+--    this.Tick.debug = function(msg) print(msg) end
+--    this.Tick.worldBlackboard = function() end
+--    this.Tick.openNodes = {}
+--    this.Tick.nodeCount = 0
+--    return this.Tree
+--end
+--
+--function this.OpenTick()
+--    Event.Add(EID.UI_State_Change,      this.OnUITick)
+--    Event.Add(EID.UI_Force_Change,      this.UIForceTick)
+--    Event.Add(EID.Deploy_Change,        this.DeployTick)
+--    Event.Add(EID.Guide_Finish,         this.GuideTick)
+--    Event.Add(EID.Unit_Action_Finish,   this.UnitTick)
+--    Event.Add(EID.Turn_Change,          this.TurnTick)
+--    Event.Add(EID.Stage_WinOrLose,      this.StageTick)
+--    Event.Add(EID.Draw_Select_Pgae,     this.DrawTick)
+--    Event.Add(EID.Click_Change_Position,this.PostionTick)
+--    Event.Add(EID.Click_Bg,             this.BgTick)
+--    -- MgrTimer.AddRepeat("GuideTick", 0.3, function()
+--    --     this.OnUITick()
+--    -- end, -1, nil)
+--end
+--
+--function this.CloseTick()
+--    Event.Remove(EID.UI_State_Change,      this.OnUITick)
+--    Event.Remove(EID.UI_Force_Change,      this.UIForceTick)
+--    Event.Remove(EID.Deploy_Change,        this.DeployTick)
+--    Event.Remove(EID.Guide_Finish,         this.GuideTick)
+--    Event.Remove(EID.Unit_Action_Finish,   this.UnitTick)
+--    Event.Remove(EID.Turn_Change,          this.TurnTick)
+--    Event.Remove(EID.Stage_WinOrLose,      this.StageTick)
+--    Event.Remove(EID.Draw_Select_Pgae,     this.DrawTick)
+--    Event.Remove(EID.Click_Change_Position,this.PostionTick)
+--    Event.Remove(EID.Click_Bg,             this.BgTick)
+--end
+--
+--function this.OnUITick(uid, state)
+--    -- if state == UIState.Show or state == UIState.BackShow then
+--        --print(uid.Name, state)
+--        this.OnTick("UI")
+--    -- end
+--end
+--function this.UIForceTick() this.OnTick("UI Force") end
+--function this.DeployTick() this.OnTick("Depoly") end
+--function this.GuideTick() this.OnTick("Guide") end
+--function this.UnitTick() this.OnTick("Unit") end
+--function this.TurnTick() this.OnTick("Turn") end
+--function this.StageTick() this.OnTick("Stage") end
+--function this.DrawTick() this.OnTick("Draw") end
+--function this.PostionTick() this.OnTick("Postion") end
+--function this.BgTick() this.OnTick("Bg") end
+--
+--function this.OnTick(msg)
+--    --print("****", msg)
+--    if this.GuideFinish() then
+--        this.CloseTick()
+--        this.Tree = nil
+--        this.Tick = nil
+--        this.Trace = nil
+--        --print("新手引导已经完成")
+--        Event.Go(EID.Guide_All_Finish)
+--        return
+--    end
+--    this.Tree:tick(this.Tick, this.Trace)
+--end
+--
+--function this.IsFinish(pId)
+--    for i,v in ipairs(this.FinishList) do
+--        if v == pId then
+--            return true
+--        end
+--    end
+--    return false
+--end
+--
+--function this.OnClickBack()
+--    if this.IsRunning then
+--        if this.HightListUI then
+--            this.HightListUI = nil
+--        end
+--        MgrUI.ClosePop(UID.Guide)
+--        MgrUI.ClosePop(UID.Click)
+--    end
+--end
+--
+--
+--function this.GuideFinish()
+--    if this.FinishList then
+--        return #this.FinishList >= this.FinishCount
+--    end
+--    return false
+--end
+--
+--function this.IsBattleGuide()
+--    return this.CurTreeId == 1002 or this.CurTreeId == 1001
+--end
+--
+--function this.IsLevelUpGuide()
+--    return this.CurTreeId ~= nil
+--end

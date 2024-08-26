@@ -1,0 +1,13 @@
+Coopsence ctor
+mov r1, #0
+mov r2, #0
+vld1.32 {d18, d19}, [r5]
+add r5, sp, #0x40
+vst1.32 {d16, d17}, [r0]
+mvn r0, #0
+回合
+00 10 A0 E3 00 20 A0 E3 8F 2A 65 F4 40 50 8D E2 8F 0A 40 F4  00 00 E0 E3
+FF 1F 0F E3 00 20 A0 E3 8F 2A 65 F4 40 50 8D E2 8F 0A 40 F4  00 00 E0 E3
+sp只加
+08 10 40 E0 00 20 A0 E3 05 00 A0 E1
+08 10 80 E0 00 20 A0 E3 05 00 A0 E1

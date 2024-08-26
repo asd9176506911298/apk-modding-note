@@ -1,0 +1,9 @@
+ext {
+    moduleLibraryName = "AOVCheat"
+    magiskModuleId = "AOVCheat"
+    moduleName = "AOVCheat"
+    moduleAuthor = "Yuki.kaco"
+    moduleDescription = "Zygisk ImGui Arena Of Valor TW Mod Menu"
+    moduleVersion = "v1.0"
+    moduleVersionCode = 1
+}

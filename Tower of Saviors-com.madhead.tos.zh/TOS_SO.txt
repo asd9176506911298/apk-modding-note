@@ -1,0 +1,103 @@
+EnterWin{
+private sealed class Labyrinth.<NextBattleZone>d__120 : IEnumerator<object>, IEnumerator, IDisposable
+    private bool MoveNext() { }
+    ldr r0, [r0,#20]
+    b Victory()
+    
+public class Labyrinth : MonoBehaviour
+    public void Victory() { }
+
+   
+public class Game.RuntimeData
+    public int get_currentWaveIndex() { }
+    'movw r0, #999; bx lr'
+}
+
+去除勝利動畫{
+public class Labyrinth : MonoBehaviour
+    public void Victory2() { } + 0x4
+    mov r0,#0
+    mov r1,#1
+    mov r2,#0
+    bl IEnumerator End
+    b Victory2 + 0x12C
+    
+public class RestoreGameplay
+    public static IEnumerator End(float time, bool isWin = True) { }
+    
+
+}
+
+Combo{
+public abstract class DummyData
+    get_comboTextDisplayNum
+    mov r0,#??
+    bx lr
+}
+
+AttackAll{
+public abstract class DummyData
+    public int get_forceAttackAllEnemy() { }
+    mov r0,#1
+    bx lr
+}
+
+SkillRemove1{
+public abstract class EnemyAttribute
+    public static EnemyAttribute SkillInit(int id) { } + 0x10
+    mov r4,#0
+}
+
+SkillRemove2{
+public abstract class NewEnemyAttribute : EnemyAttribute
+    public override void Activate(EnemyInstance enemyInstance) { }
+    bx lr
+    
+public class MustKillTogether : EnemyAttribute
+    public override void Activate(EnemyInstance enemyInstance) { }
+    bx lr
+}
+
+GlobalSpeedUp{
+public sealed class WaitForSeconds : YieldInstruction
+    public void .ctor(float seconds) { } + 0x8
+    mov r4,#0
+}
+
+Bypass{
+public abstract class CheatDetectorsReporter
+    public static void OnSpeedHackDetected() { }
+    public static void OnValueCheatDetected() { }
+    public static void OnTOSCheatDetected(int cheatCategory) { }
+    bx lr
+}
+
+UltSkill{
+public class PlayerMonsterInstance : iMonoBehaviour
+    public bool CanActivateNormalSkill(int skillIndex) { }
+    mov r0,#1
+    bx lr
+public class ActiveSkillInstance
+    public bool get_canUse() { }
+    mov r0,#1
+    bx lr
+}
+
+GoldenChain{
+public class SO_BlockGoldenActiveSkill : SkillOutcome
+    private void Block(int index, int round, bool noAni = False, bool isBlockFromRestore = False) { }
+}
+
+InventoryFull{
+public class Inventory
+    public bool get_isAnyOneFull() { }
+    mov r0,#0
+    bx lr
+}
+
+TeamSize{
+public class Card : ICard
+    public int get_size() { }
+    mov r0,#0
+    bx lr
+}

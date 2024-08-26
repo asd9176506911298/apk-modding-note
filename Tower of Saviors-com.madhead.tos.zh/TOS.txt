@@ -1,0 +1,101 @@
+ღº阡陌ོꦿ࿐昨天 20:57
+04 10 A0 E1 00 20 A0 E3 E6 F3 28 EB
+
+55
+ღº阡陌ོꦿ࿐昨天 21:28
+h00 20 90 E5 34 31 92 E5 38 21 92 E5 13 FF 2F E1 30 48 2D E9 08 B0 8D E2
+
+-- 跳王關
+SetCurrentWaveIndex + 0x198
+public static void SetCurrentWaveIndex(int index, bool restore = False) { }
+0x16d8c1c
+new 0x3A8C8D4
+19.13 
+'55 10 A0 E3r'
+
+                                MOV             R1, R4  ------------ this
+il2cpp:03A8C8D8                 MOV             R2, #0
+il2cpp:03A8C8DC                 BL              j_Game.RuntimeData$$set_currentWaveIndex
+il2cpp:03A8C8E0                 SUB             SP, R11, #0x10
+il2cpp:03A8C8E4                 LDMFD           SP!, {R4-R6,R10,R11,PC}
+
+
+--跳選擇關卡
+<GamePlayVictory>b__34_6 + 1CC
+0x206fa7c
+new 0x17EE2DC
+'13 07 02 E3r'
+
+                                MOV             R0, #0x2719 ---------- this
+il2cpp:017EE2E0                 MOV             R1, R4
+il2cpp:017EE2E4                 MOV             R2, #0
+il2cpp:017EE2E8                 LDMFD           SP!, {R4-R7,R11,LR}
+il2cpp:017EE2EC                 B               ViewController$$SwitchView_17430380
+
+
+--回合
+public class FloorInfo + 4F0
+    public void .ctor(FloorJsonData data) { }
+0xce9568
+new 0x18969FC
+'00 00 A0 E3r'
+
+                                LDR             R0, [R5,#0x94] --------- this
+il2cpp:01896A00                 STR             R0, [R4,#0xFC]
+il2cpp:01896A04                 B               loc_1896A6C
+
+--小提示去除
+Game
+    public static void ShowHints() { }
+0x16a9828
+new 0x3A5D4E0
+'1E FF 2F E1r'
+
+
+--種族限制去除
+public class FloorInfo
+    private void AddLimit(string limitation, bool isDynamic = False) { }
+0xcec99c
+new 0x1899E30
+'1E FF 2F E1r'
+
+--無技能
+public abstract class NewEnemyAttribute : EnemyAttribute
+    public override void Activate(EnemyInstance enemyInstance) { }
+0xb9470c
+new 0x14EEE70
+'1E FF 2F E1r'
+
+--高攻回
+public abstract class DummyData
+    public void set_comboTextDisplayNum(int value) { }
+0x22e9518
+new 0x1A54DF0
+'FA 0F A0 E3 1E FF 2F E1r'
+
+--不上榜
+public class RestoreGameplay
+    public static void set_timeRestored(int value) { }
+0x203850c
+new 0x17B6D6C
+'01 10 A0 E3r'
+
+il2cpp:017B6D6C                 MOV             R1, R4 ------- this
+il2cpp:017B6D70                 MOV             R2, #0
+il2cpp:017B6D74                 LDMFD           SP!, {R4,R5,R11,LR}
+il2cpp:017B6D78                 B               MH.MIntParam$$set_Value
+
+--全體攻擊
+public abstract class DummyData
+    public void set_forceAttackAllEnemy(int value) { }
+0x22e96b0
+new 0x1A54F88
+'01 00 A0 E3 1E FF 2F E1r'
+
+--跳關加速
+public sealed class WaitForFixedUpdate : YieldInstruction
+    UnityEngine.WaitForSeconds
+0x363F354
+
+victory 
+0x17E6884

@@ -1,0 +1,50 @@
+0x11e694c
+public static Boolean get_IsDebugMode() { }
+
+public class PauseUICtrl : UIBase
+    ButtonDebug
+
+public Void OpenUI(WindowID windowid, Object arg, Action`1 callback) { }
+windowid
+SettingDebugUIPanel
+SettingDebugItemBase
+
+http://prod-socket.survivorio.com/:80
+https://prod-game.survivorio.com/
+
+/api/v1/config
+/api/v1/mails/list
+ThinkingSDKConfig
+
+public class TGAManager : CInstance`1
+public class PlayerPrefsMgr : SingleClass`1
+    public String GetSystemUnlockConfig() { }
+
+public Void UpdateUserData() { }
+
+public class GameLogicStartLoading : IGameLogicStrategy
+    private String GetServerHotfixVersion() { }
+
+public class SystemUnlockManager : CInstance`1
+
+public class NetworkManager
+public class AndroidPlatform : StandalonePlatform
+    public override String GetAppVersionName() { }
+
+2.05.687.10
+
+public static class SurvivorInGame
+    public static Boolean IsClient() { }
+
+public class StandalonePlatform
+
+5AC4298
+
+public class HabbyCloudConfigData
+public class HabbyCloudConfigManager
+    public Boolean get_NeedForceUpdate() { } //popupGoogleUpdate
+    public String get_HotfixWhiteList() { } //43537961
+
+public static class LocalSaveData
+
+public class ThinkingAnalyticsAPI : MonoBehaviour, TaExceptionHandler

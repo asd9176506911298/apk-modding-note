@@ -1,0 +1,32 @@
+public void SetBaseAttackValue(InGameLeaderSkill leaderSkill) { } + 0x88 02 00 00 EA
+
+public class Character : StageObject
+    protected virtual bool CanKnockBack() { } mov r0,#0 -> 00 00 A0 E3 1E FF 2F E1
+    
+public class UnitExBoardModel50 03 0C E3 0A 10 A0 E3 90 01 00 E0 1E FF 2F E1
+    public int get_GetTotalHp() { }
+    public int get_GetTotalSp() { }
+    public int get_GetTotalAtk() { }
+    public int get_GetTotalDef() { }
+    public int get_GetTotalHit() { }
+    
+public class InGameManager : Singleton<InGameManager>
+    public void CatchItem(Item item) { } + 0x69C 04 00 00 1A
+                                         + 0x6F4 02 00 A0 E3
+                                         
+public class InGameManager.Enemy : InGameManager.Data
+    public void .ctor(QuestGenerateModel.Stage.EnemyParam param, QuestGenerateModel.Stage.Enemy data, QuestGenerateModel.Stage.EnemyParamStep step) { } + 0x150 01 10 A0 E3
+    
+public class InGameManager.Result
+    public XorInt get_TotalDamageNum() { } 00 00 A0 E3
+    public XorInt get_TotalAttackedDamageNum() { }
+    public XorInt get_TotalDamageNumFromPlacementObject() { }
+    public XorInt get_TotalDamageAmount() { }
+    public XorInt get_TotalDeadNum() { }
+    public XorInt get_TotalHelperDeadNum() { }
+    public XorInt get_TotalUseActionSkillNum() { }
+    public XorInt get_TotalUseHealActionSkillNum() { }
+    public XorInt get_TotalUseReinforcementActionSkillNum() { }
+    public XorInt get_TotalBadStatusNum() { }
+
+    

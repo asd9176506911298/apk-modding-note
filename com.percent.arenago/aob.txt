@@ -1,0 +1,35 @@
+Gold 
+DailyCheckRewardBox$$GetGoldReward
+UserDBManager$$AddGold
+00 00 A0 E3 09 10 A0 E1 00 00 8D E5 04 00 A0 E1  06 20 A0 E1 08 30 A0 E1  63 84 03 EB 18 D0 4B E2  F0 8B BD E8
+
+00 00 A0 E3 09 10 A0 E1  00 00 8D E5 04 00 A0 E1 06 20 A0 E1 08 30 A0 E1
+00 00 A0 E3 F3 14 E0 E3
+金錢
+4EC0DC
+
+鑽石
+4EC268
+
+碎片
+4EC3F4
+
+
+public class RewardBoxManager : Singleton<RewardBoxManager>
+	private void UnboxingSuccess(string resultStr, bool isSkipBoxScreen = False, bool isSyncLocalData = True, bool isTotalSkip = False, Action boxScreenEndCallback) { }
+
+RewardBoxManager.__c__DisplayClass4_0$$_PurchasesBox_b__0
+RewardBoxManager$$UnboxingSuccess
+
+LoadingManager$$StartLoading 
+
+開箱動畫移除
+F0 4F 2D E9 1C B0 8D E2  14 D0 4D E2 04 73 9F E5 00 50 A0 E1 03 80 A0 E1  02 40 A0 E1 07 70 8F E0 01 60 A0 E1 00 00 D7 E5  00 00 50 E3 05 00 00 1A E4 02 9F E5 00 00 9F E7  00 00 90 E5 B9 D4 FB EB
+49C848
+01 70 A0 E3
+
+BUTTON
+5FC5E4
+
+RewardBoxManager$$PurchasesBox_4828052
+開箱動畫移除

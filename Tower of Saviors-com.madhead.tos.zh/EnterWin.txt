@@ -1,0 +1,23 @@
+// hook 定義
+// @Labyrinth
+// ==== 勝利函數 ====
+void (*Victory)(void *instance);
+
+// ==== hook 自動勝利 ====
+bool (*old_NextBattleZone)(void *instance);
+bool new_NextBattleZone(void *instance) {
+    if(instance && isEnterWin) {
+        Victory(*(void**)((uint64_t)instance + 0x14))
+        return 0;
+    }
+    return old_NextBattleZone(instance);    
+}
+
+
+// hack_thread
+Victory = (void (*)(void *)) getAbsoluteAddress(libName, 0xEB89F0);
+
+MSHookFunction(
+        (void *) getAbsoluteAddress(libName, string2Offset(OBFUSCATE_KEY("0x11A17FC", '?'))),
+        (void *) new_NextBattleZone,
+        (void **) &old_NextBattleZone);

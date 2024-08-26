@@ -1,0 +1,6 @@
+get_currentWaveIndex
+
+Labyrinth
+    Victory()
+    
+NextBattleZone

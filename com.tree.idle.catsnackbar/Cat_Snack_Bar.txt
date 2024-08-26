@@ -1,0 +1,38 @@
+public struct SlotData : IFlatbufferObject
+    public float get_Cooltime() { }
+
+    public int get_Buffvalue() { }
+    15
+
+public struct StaffData : IFlatbufferObject
+    public int get_Count() { }
+    public float get_Speed() { }
+
+public struct UserData : IFlatbufferObject
+    public int get_Cash() { }
+
+
+----------------------
+public class SlotData : IReadOnlyData, ICloneable
+
+InGameUpgradeUI
+StaffCashier
+StaffChef
+ProjectUtility
+
+InGameSystem
+PageStageMap
+PanAndZoom
+PopupUpgrades = manage snack bar shop
+ItemAbility = collection
+UserDataSystem__SetReward
+hudRefresh
+
+public struct BigInteger : IFormattable, IComparable, IComparable<BigInteger>, IEquatable<BigInteger> // TypeDefIndex: 12371
+    private static BigInteger Add(uint[] leftBits, int leftSign, uint[] rightBits, int rightSign)
+    private static BigInteger Subtract(uint[] leftBits, int leftSign, uint[] rightBits, int rightSign) { }
+    curMoney - subMoney
+
+    public static int op_Explicit(BigInteger value) { }
+
+    加錢sign 0 扣錢 1

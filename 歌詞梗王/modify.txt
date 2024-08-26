@@ -1,0 +1,17 @@
+0xAD74C0
+// Namespace: BPGame
+public class UIPlayGamePage : UIBase
+private void ShowAllTips() { }
+
+0xAD7578
+// Namespace: BPGame
+public class UIPlayGamePage : UIBase
+private void AddTipWord() { }
+
+
+// Namespace: BPGame
+public class AdManager : Singleton<AdManager>
+public void Init() { }
+0xAC4F28
+args[0].add(0x18).writeU8(1)
+args[0].add(0x19).writeU8(1)

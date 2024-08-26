@@ -1,0 +1,43 @@
+public class LFrameSyncBattleLogic : LBattleLogic
+    public UInt64 SampleAndSendFrameSyncData(Boolean isFightOver) { }
+
+public class LFrameSyncBattleLogic : LBattleLogic
+    public Void SendSyncData(Boolean isFightOver, UInt64 hashCode) { }
+
+public sealed class MtaService : MonoBehaviour
+    public static Void ReportAppMonitorStat(MtaAppMonitor monitor) { }
+    public static Void ReportGameUser(MtaGameUser gameUser) { }
+    public static Void ReportError(String error_msg) { }
+
+
+public static class AnoSDK
+    public static Void SetUserInfo(Int32 entryId, String openId) { }
+    private static extern IntPtr AnoSDKGetReportData() { }
+    public static Byte[] GetReportData2() { }
+    private static extern IntPtr AnoSDKGetReportData2() { }
+    public static Byte[] GetReportData3() { }
+    private static extern IntPtr AnoSDKGetReportData3() { }
+    private static extern Void AnoSDKDelReportData3(IntPtr info) { }
+
+private class AntiDataInfo
+    public Void .ctor() { }
+
+public class TGPAServiceAndroid : ITGPAService
+    public Void EnableLog(Boolean enable) { }
+    public String CheckDeviceIsReal() { }
+    public Void ReportUserInfo(Dictionary`2 dict) { }
+
+public class MSDKCrash
+    private static extern Void closeCrashReportAdapter() { }
+    public static Void LogInfo(MSDKCrashLevel level, String tag, String log) { }
+    public static Void SetUserValue(String k, String v) { }
+    public static Void SetUserId(String userId) { }
+    public static Void CloseCrashReport() { }
+
+public class MSDKLBS
+    public static Void GetIPInfo() { }
+
+public class GCloudVoiceEngine : IGCloudVoice
+    private static extern Int32 GCloudVoice_ReportPlayer(String[] cszOpenID, Int32 nCount, String strInfo) { }
+    public override Int32 SetReportedPlayerInfo(String[] cszOpenID, Int32[] nMemberID, Int32 nCount) { }
+    public override Int32 ReportPlayer(String[] cszOpenID, Int32 nCount, String strInfo) { }

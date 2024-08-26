@@ -1,0 +1,14 @@
+public class GameSettings
+    public static bool get_Supported60FPSMode() { }
+    
+public class CameraSystem : MonoSingleton<CameraSystem> 
+    private void Update() { }
+    
+public class LSpectatorMgr.ActorVisible
+    public bool SetVisible(COM_PLAYERCAMP targetCamp, bool bVisible) { }
+    
+public sealed class Camera : Behaviour
+    public void set_fieldOfView(float value) { }
+    
+public sealed class Camera : Behaviour
+    public static Camera get_main() { }

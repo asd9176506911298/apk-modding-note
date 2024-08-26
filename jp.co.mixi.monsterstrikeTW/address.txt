@@ -1,0 +1,16 @@
+_ZN14SysGameManager16getNextTurnEnemyEPj
+da7604 0x17AB724
+f0 b5 03 af 2d e9 00 0b
+5f f8 00 f0 f8 3f c9 bb
+_ZN9TaskEnemy9addDamageExfb
+fecd14 E4D988
+f0 b5 03 af 
+_ZN12TaskCharBall16isStrikeAttackOkEv
+11d92cc
+f0 b5 03 af 4d f8 04 bd
+_ZN13TaskGaugeShot19isGaugeShotGreatestEv
+15a1c9c
+b0 b5 02 af 04 46 00 68
+_ZN21ScenePageOsakaLottery25getCharacterButtonOffsetXEv
+1731cf0
+08 1f b0 fa 80 f0 40 09

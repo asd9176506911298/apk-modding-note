@@ -1,0 +1,48 @@
+function create_bullet(x, y, rot, damage, id, side)
+_root.create_bullet(_X,_Y,rot,200,"special1",1);
+
+佇列
+add_to_tray
+
+EN entity
+EN[0] name
+EN[1] cost
+EN[2] timer
+EN = ["",["Club man",15,40],["Slingshot man",25,40],["Dino rider",100,100],["Sword man",50,70],["Archer",75,50],["Knight",500,100],["Dueler",200,100],["Mousquettere",400,100],["Canoneer",1000,200],["Melee Infantry",1500,100],["Infantry",2000,100],["Tank",7000,300],["God\'s Blade",5000,100],["Blaster",6000,100],["War machine",20000,300],["Super Soldier",150000,100]];
+
+TU turret
+TU[0] name
+TU[1] cost
+TU[2] timer
+TS = ["",[30,1,12,350],[11,2,5,300],[70,3,25,400],[70,3,40,400],[70,4,50,400],[100,5,4,300],[70,6,30,500],[70,6,70,500],[70,7,100,500],[40,8,70,500],[50,9,100,500],[22,8,70,500],[40,12,100,400],[10,10,40,500],[10,11,60,800]];
+
+EV evolution experience
+EV = [4000,14000,45000,200000];
+
+TS Turret
+TS[0] shoot_speed
+TS[1] bullet_id
+TS[2] damage
+TS[3] range
+TS = ["",[30,1,12,350],[11,2,5,300],[70,3,25,400],[70,3,40,400],[70,4,50,400],[100,5,4,300],[70,6,30,500],[70,6,70,500],[70,7,100,500],[40,8,70,500],[50,9,100,500],[22,8,70,500],[40,12,100,400],[10,10,40,500],[10,11,60,800]];
+
+ES Enemy
+ES[0] health
+ES[1] damage
+ES[2] range_damage
+ES[3] range_shoot
+ES[4] range_melee
+ES = ["",[55,16,0,20,0],[42,10,8,20,100],[160,40,0,45,0],[100,35,0,20,0],[80,20,9,20,130],[300,60,0,60,0],[200,79,0,25,0],[160,40,20,25,130],[600,120,0,25,0],[350,100,0,25,0],[300,60,30,25,130],[1200,300,0,100,0],[1000,250,0,40,0],[800,130,80,40,130],[3000,600,0,100,0],[4000,400,400,40,150]];
+
+Harder 
+health damage * 1.3
+
+Impossible
+health damage * 2.0
+
+Menu:
+this.onEnterFrame = function()
+_root.cash = 87878787;
+
+function create_ennemy(id)
+timer = 0;

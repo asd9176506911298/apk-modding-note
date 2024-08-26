@@ -1,0 +1,114 @@
+//開圖 會一閃一閃
+NucleusDrive
+public class LVActorLinker : LActorComponent
+    public void CalcVisible() { }
+    public void ForceSetVisible(bool bVisible) { }
+
+//開圖 ok
+public class LVActorLinker : LActorComponent
+    public bool SetVisible(COM_PLAYERCAMP camp, bool bVisible, bool forceSync = False) { }
+
+temp
+private void SendChargeSkillCmd(SkillSlotType type, short degree, byte state)
+public void EnableSkillCursor(CUIFormScript battleFormScript, ref Vector2 screenPosition, bool enableSkillCursorJoystick, SkillSlotType skillSlotType, SkillSlot useSlot, bool isSkillCanBeCancled) { }
+
+public enum SkillTargetRule
+public ActorLinker SelectTarget(SkillTargetRule ruleType, SkillSlot slot)
+public void SetUseSkillTarget() { }
+
+public ActorLinker GetTargetActorBySkill() { }
+public void SetTargetActorBySkill(ActorLinker targetActorBySkill)
+
+public static class SelectTargetHelper:
+    public static ActorLinker GetTarget(SkillSlot UseSlot) { }
+
+public SkillRangeAppointType get_AppointType() { }
+
+public class ExportEnums
+
+public class GamePlayerCenter : LBattleModuleBase 
+    public List<PlayerBase> GetAllPlayers() { }
+
+public class MiniMapHeroInfo : MonoBehaviour
+    public void ShowHeroCampFrame(bool bShow) { }
+    public void ShowHeroHpInfo(bool bShow) { }
+    public void ShowSkillStateInfo(bool bShow) { }
+    public void ShowReviveTimeInfo(bool bShow) { }
+    //public void ShowHeroDeadMask(bool bShow) { }
+
+
+private void ShowHeroInfo(PoolObjHandle<ActorLinker> actor, bool bShow) { }
+
+public class SkillControlIndicator
+    public void SetSkillUseTargetPosition(ActorLinker target, bool showRedLine = True) { }
+    public void SetGuildPrefabShow(bool bShow, bool setHideFrameNum = True) { }
+    public void ChargingSkill(bool start) { }
+
+public class CUIManager : UIManagerBase<CUIManager> 
+    public void OpenMessageBox(string strContent, enUIEventID confirmID, bool isContentLeftAlign = False) { }
+    
+CGCloudUpdateSystem
+    private string get_libCfgMD5() { }
+
+private void InitGMButtonInFormSetting() { }
+
+CustomSetActive
+public class CUIManager : UIManagerBase<CUIManager>
+    private void <>iFixBaseProxy_SetFormActive(GameObject P0) { }
+    protected override void SetFormActive(GameObject form) { }
+    public CUIFormScript OpenMessageBoxBase(string strContent, bool isHaveCancelBtn, enUIEventID confirmID, enUIEventID cancelID, stUIEventParams par, bool isContentLeftAlign = False, string confirmStr = "", string cancelStr = "", string titleStr = "", int autoCloseTime = 0, enUIEventID timeUpID = 0, bool isShowCloseButton = False, enUIEventID closeID = -1, string tipsContent = "", enUIEventID tipEventID = -1, bool isSelectTips = False, TextAnchor strContentAlignment = 4, bool bHasConfirmBtn = True, CUIEventScript.OnUIEventHandler confirmCallback, CUIEventScript.OnUIEventHandler cancelCallBack) { }
+    public void OpenMessageBox(string strContent, enUIEventID confirmID, bool isContentLeftAlign = False) { }
+
+public class LobbyMsgHandler
+    public static void onGameLoginLimit(CSPkg msg) { }
+
+public void LoginGame() { }
+
+CSProtocol
+public class CSPkgBody : ProtocolObject
+
+public class ApolloHelper 
+ApolloHelper
+
+public class UITemplateCommonButtonView : UITemplateBaseView, IUIEventScriptContainer
+    protected override void setTemplateParam() { }
+
+public int HookWinGameCnt()
+------------------
+public class LVActorLinker : LActorComponent
+    public bool SetVisible(COM_PLAYERCAMP camp, bool bVisible, bool forceSync = False) { }
+
+//public static class SelectTargetHelper
+//修改範圍
+//searchRadius
+//    private static ActorLinker GetTargetImpl(SkillSlot UseSlot, int searchRadius, ActorTypeDef targetActorType = 8) { }
+
+return 1;
+public class ObjLinkerWrapper : VActorComponent
+    public bool IsDistanceLowerEqualAsAttacker(ActorLinker targetActor, int radius) { }
+
+public class HeroInfoPanel : HeroInfoPanelInterface
+    bShow args[3]
+    private void ShowHeroInfo(PoolObjHandle<ActorLinker> actor, bool bShow) { }
+
+public class MiniMapHeroInfo : MonoBehaviour
+    public void ShowHeroHpInfo(bool bShow) { }
+    public void ShowSkillStateInfo(bool bShow) { }
+    public void ShowReviveTimeInfo(bool bShow) { }
+    //public void ShowHeroCampFrame(bool bShow) { }
+    //public void ShowHeroDeadMask(bool bShow) { }
+
+public class CPlayerProfile
+    public bool get_IsHostProfile() { }
+
+0x2E3D968 Update
+public sealed class ActorLinker : PooledClassObject
+    mIsHostCtrlActor
+
+0x27E0A08
+public class CameraSystem : MonoSingleton<CameraSystem>
+    public Camera get_CurCamera() { }
+
+public class HudComponent3D : VActorComponent
+
+----------------

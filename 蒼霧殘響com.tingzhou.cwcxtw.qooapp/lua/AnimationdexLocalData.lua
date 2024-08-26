@@ -1,0 +1,26 @@
+AnimationdexLocalData={}
+AnimationdexLocalData.tab={
+[1] = {1,	1,	"anime_chalishakan",	"chalishakan",	100031,	"查麗莎揮舞長槍",	1,	"苍穹战线",	"0",	"0",	"0",	"查丽莎挥舞长枪"},
+[2] = {2,	1,	"anime_chenshibaozha",	"chenshibaozha",	100035,	"湮滅",	2,	"苍穹战线",	"0",	"0",	"0",	"湮灭"},
+[3] = {3,	1,	"anime_guantong",	"guantong",	100032,	"逆轉錄光束",	3,	"苍穹战线",	"0",	"0",	"0",	"逆转录光束"},
+[4] = {4,	1,	"anime_jiejingdaota",	"jiejingdaota",	100036,	"黑洞",	4,	"苍穹战线",	"0",	"0",	"0",	"黑洞"},
+[5] = {5,	1,	"anime_jiguang",	"jiguang",	100025,	"極光",	5,	"苍穹战线",	"0",	"0",	"0",	"极光"},
+[6] = {6,	1,	"anime_linghangsiwang",	"linghangsiwang",	100032,	"迎來終焉",	6,	"苍穹战线",	"0",	"0",	"0",	"迎来终焉"},
+[7] = {7,	1,	"anime_naiaixuli",	"naiaixuli",	100031,	"逆愛其一",	7,	"苍穹战线",	"0",	"0",	"0",	"逆爱其一"},
+[8] = {8,	1,	"anime_naiaixuli2",	"naiaixuli2",	100031,	"逆愛其二",	8,	"苍穹战线",	"0",	"0",	"0",	"逆爱其二"},
+[9] = {9,	1,	"anime_niaihuhuan",	"niaihuhuan",	100031,	"記憶殘片",	9,	"苍穹战线",	"0",	"0",	"0",	"记忆残片"},
+[10] = {10,	1,	"anime_niaisiwang",	"niaisiwang",	100033,	"哀亡",	10,	"苍穹战线",	"0",	"0",	"0",	"哀亡"},
+[11] = {11,	1,	"anime_seyudengchang",	"seyudengchang",	100039,	"色慾",	11,	"苍穹战线",	"0",	"0",	"0",	"色欲"},
+[12] = {12,	1,	"anime_siguang",	"siguang",	100036,	"死光",	12,	"苍穹战线",	"0",	"0",	"0",	"死光"},
+[13] = {13,	2,	"anime_suobeikexiji",	"suobeikexiji",	100133,	"角力",	1,	"浓雾港湾",	"0",	"0",	"0",	"角力"},
+[14] = {14,	2,	"anime_yuanzuiruqin",	"yuanzuiruqin",	100101,	"原罪入侵",	2,	"浓雾港湾",	"0",	"0",	"0",	"原罪入侵"},
+[15] = {15,	2,	"anime_zhizhuchuansong",	"zhizhuchuansong",	100112,	"“蜘蛛”",	3,	"浓雾港湾",	"0",	"0",	"0",	"“蜘蛛”"},
+[16] = {16,	1,	"anime_zhuliwusikan",	"zhuliwusikan",	100031,	"朱利烏斯",	13,	"苍穹战线",	"0",	"0",	"0",	"朱利乌斯"},
+[17] = {17,	1,	"anime_WangZhuangSuiDao",	"rjp-WangZhuangSuiDao",	100025,	"神經網",	14,	"苍穹战线",	"0",	"0",	"0",	"神经网"},
+[18] = {18,	3,	"anime_tiaoshui",	"tiaoshui",	100201,	"巨大化",	1,	"海市蜃楼",	"0",	"0",	"0",	"巨大化"},
+[19] = {19,	3,	"anime_duoluolisi",	"langsong",	100208,	"弱小的她",	2,	"海市蜃楼",	"0",	"0",	"0",	"弱小的她"},
+[20] = {20,	3,	"anime_haishetuxi",	"haishetuxi",	100215,	"吐息",	3,	"海市蜃楼",	"0",	"0",	"0",	"吐息"},
+[21] = {21,	0,	"anime_222",	"222",	0,	"開場動畫",	1,	"时间之外",	"0",	"0",	"0",	"开场动画"},
+[22] = {22,	4,	"anime_duoluolisi1",	"duoluolisi1",	100331,	"交給我吧",	1,	"心之所向",	"0",	"0",	"0",	"交给我吧"},
+}
+return AnimationdexLocalData
