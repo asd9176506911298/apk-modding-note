@@ -1,0 +1,13 @@
+LevelBattleMode.prototype.initBattle = function (options) {
+    autoAttack = _a.autoAttack
+    autoAttack = 1
+
+ServerLevelBattleMode.prototype.initBattle = function (options) {
+
+FighterCreator.createLord = function (startIndex, isAutoAttack, camp, team, mode, autoAttackInterval) {
+    compCreator.tabAttack = 99999999;//team.tapAttack;
+
+ClientFighterData.prototype.set = function (serverData) {
+    serverData.attack = 99999;
+    serverData.hp = 99999;
+    serverData.curHp = 99999;
